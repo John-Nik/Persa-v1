@@ -15,5 +15,5 @@ __1.0.3:__ added "_redirects", which automatically redirects users based on thei
    to load from the first byte</li> </ol>
    <br>
 
-__1.0.4:__ added robots.txt to instruct search engine crawlers how to crawl the page. They are allowed to crawl every webpage except the copyright.html <br>
+__1.0.4:__ added "robots.txt" to instruct search engine crawlers how to crawl the page. They are allowed to crawl every webpage except the copyright.html <br>
 <br>
