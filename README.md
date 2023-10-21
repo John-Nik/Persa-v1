@@ -12,6 +12,6 @@ __1.0.3:__ added "_redirects", which automatically redirects users based on thei
   <li>The predictable increase of latency</li>
   <li>The predictable slow-down caused from the increased latency</li>
   <li>A drop in Lightspeed score, because of the amount of redirects and time to load from the first byte</li>
-</ol> <br>
+</ol>
 __1.0.4:__ added robots.txt to instruct search engine crawlers how to crawl the page. They are allowed to crawl every webpage except the copyright.html<br>
 <br>
