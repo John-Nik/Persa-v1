@@ -2,5 +2,5 @@
 / /gr 301! Language=el
 /en/* /en/404 404
 /gr/* /gr/404 404
-/* /en/404 404 Languages=en
-/* /gr/404 404 Languages=el
+* /en/404 404 Languages=en
+* /gr/404 404 Languages=el
