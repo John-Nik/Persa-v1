@@ -27,4 +27,6 @@ __1.0.6:__ Updated the "sitemap.xml". <ul>  <li>Removed the http varients of lin
 
 __1.0.7:__ Added Canonical and alternate link attributes to english and greek versions respectively <br>
 <br>
-__1.0.8:__ Changed the "app.js" script file to redirect to prettier URLs (removed the .html suffix from the URLs)
+__1.0.8:__ Changed the "app.js" script file to redirect to prettier URLs (removed the .html suffix from the URLs) <br>
+<br>
+__1.0.9:__ <ul>  <li>Changed the canonical and alternate element tags to link to "www.persaco.com" instead of "persaco.com"</li>  <li>Added a new 404.html</li>  <li> Added new redirect rule, to redirect all broken links to those newly added 404.html </li>  <li> Added a new disallowed directory for the crawlers to crawl to, the "404.html"
