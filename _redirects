@@ -2,15 +2,15 @@
 / /gr 301! Language=el
 
 # rewrites all the english recipe html files to non-html links to make the url prettier
-/en/recipes/recipe1.html /en/recipes/recipe1 200
-/en/recipes/recipe2.html /en/recipes/recipe2 200
-/en/recipes/recipe3.html /en/recipes/recipe3 200
-/en/recipes/recipe4.html /en/recipes/recipe4 200
-/en/recipes/recipe5.html /en/recipes/recipe5 200
+/en/recipes/recipe1.html /en/recipes/recipe1 200!
+/en/recipes/recipe2.html /en/recipes/recipe2 200!
+/en/recipes/recipe3.html /en/recipes/recipe3 200!
+/en/recipes/recipe4.html /en/recipes/recipe4 200!
+/en/recipes/recipe5.html /en/recipes/recipe5 200!
 
 # rewrites all the greek recipe html files to non-html links to make the url prettier
-/gr/recipes/recipe1.html /gr/recipes/recipe1 200
-/gr/recipes/recipe2.html /gr/recipes/recipe2 200
-/gr/recipes/recipe3.html /gr/recipes/recipe3 200
-/gr/recipes/recipe4.html /gr/recipes/recipe4 200
-/gr/recipes/recipe5.html /gr/recipes/recipe5 200
+/gr/recipes/recipe1.html /gr/recipes/recipe1 200!
+/gr/recipes/recipe2.html /gr/recipes/recipe2 200!
+/gr/recipes/recipe3.html /gr/recipes/recipe3 200!
+/gr/recipes/recipe4.html /gr/recipes/recipe4 200!
+/gr/recipes/recipe5.html /gr/recipes/recipe5 200!
