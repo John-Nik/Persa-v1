@@ -27,5 +27,3 @@ __1.0.6:__ Updated the "sitemap.xml". <ul>  <li>Removed the http varients of lin
 
 __1.0.7:__ Added Canonical and alternate link attributes to english and greek versions respectively <br>
 <br>
-__1.0.8:__ Added redirect commands to redirect all traffic from recipe1.html, recipe2.html, recipe3.html etc. to recipe1, recipe2, recipe3 (non-html varients with the intent of making the url prettier) <br>
-<br>
