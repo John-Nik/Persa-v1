@@ -1,8 +1,8 @@
 / /en 301! Language=en
 / /gr 301! Language=el
 
-/ /en/404 404 Languages=en
-/ /gr/404 404 Languages=el
+/* /en 302 Languages=en
+/* /gr 302 Languages=el
 
 /en/* /en/404 404
 /gr/* /gr/404 404
