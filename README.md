@@ -19,4 +19,6 @@ __1.0.4:__ Added "robots.txt" to instruct search engine crawlers how to crawl th
 <br>
 __1.0.4:__ Added a website sitemap "sitemap.xml" <br>
 <br>
-__1.0.5:__ Optimized the pagespeed scores by moving the hotjar script to the bottom of the body element
+__1.0.5:__ Optimized the pagespeed scores by moving the hotjar script to the bottom of the body element <br>
+<br>
+__1.0.5.5:__ Due to an unexplainable issue with google search console, netlify OR cloudflare, updated the sitemap.xml to include "persaco.com/" (will later convert all sites to https on a later version)
