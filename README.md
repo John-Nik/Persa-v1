@@ -25,5 +25,7 @@ __1.0.5.5:__ Due to an unexplainable issue with google search console, netlify O
 <br>
 __1.0.6:__ Updated the "sitemap.xml". <ul>  <li>Removed the http varients of link to instruct the crawlers and search engines to showcase the https version of the links</li>  <li>Removed "copyright.html" from its list to match the "robots.txt" </li>  </ul> <br>
 
-__1.0.6.5:__ Added Canonical and alternate link attributes to english and greek versions respectively <br>
+__1.0.7:__ Added Canonical and alternate link attributes to english and greek versions respectively <br>
+<br>
+__1.0.8:__ Added redirect commands to redirect all traffic from recipe1.html, recipe2.html, recipe3.html etc. to recipe1, recipe2, recipe3 (non-html varients with the intent of making the url prettier) <br>
 <br>
