@@ -17,4 +17,6 @@ __1.0.3:__ added "_redirects", which automatically redirects users based on thei
 
 __1.0.4:__ Added "robots.txt" to instruct search engine crawlers how to crawl the page. They are allowed to crawl every webpage except the copyright.html <br>
 <br>
-__1.0.4:__ Added a website sitemap "sitemap.xml"
+__1.0.4:__ Added a website sitemap "sitemap.xml" <br>
+<br>
+__1.0.5:__ Optimized the pagespeed scores by moving the hotjar script to the bottom of the body element
