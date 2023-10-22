@@ -25,3 +25,6 @@ __1.0.5.5:__ Due to an unexplainable issue with google search console, netlify O
 <br>
 __1.0.6:__ Updated the "sitemap.xml". <ul>  <li>Removed the http varients of link to instruct the crawlers and search engines to showcase the https version of the links</li>  <li>Removed "copyright.html" from its list to match the "robots.txt" </li>  </ul> <br>
 <br>
+
+__1.0.6.5:__ Added Canonical and alternate link attributes to english and greek versions respectively <br>
+<br>
