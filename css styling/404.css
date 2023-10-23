@@ -1580,13 +1580,83 @@ body, html {
       }
 
       #error h1 {
-        font-size: 4rem;
+        font-size: clamp(1.5rem, 10vw, 4rem);
         text-align: center;
         padding: 4rem 0rem;
+        margin: 0;
       }
       #error img {
-        height: 100%;
+        height: clamp(10rem, 150vw, 40rem);
         width: auto;
-        max-height: 30rem;
         margin-top: -4rem;
+      }
+      p {
+        font-size: clamp(0.75rem, 8vw, 2rem);
+        margin-top: -1em;
+        margin-bottom: 5em;
+      }
+      p::after {
+        content: '';
+        animation: countdown 5s ease, finished 2s ease 5s infinite; 
+      }
+
+      p#greek::after {
+        content: '';
+        animation: countdown 5s ease, finishedgreek 2s ease 5s infinite;
+      }
+
+      @keyframes countdown {
+        0% {
+          content: '5';
+        }
+        20% {
+          content: '4';
+        }
+        40% {
+          content: '3';
+        }
+        60% {
+          content: '2';
+        }
+        80% {
+          content: '1';
+        }
+        100% {
+          content: '0';
+        }
+      }
+
+      @keyframes finished {
+        0% {
+          content: 'now';
+        }
+        25% {
+          content: 'now.';
+        }
+        50% {
+          content: 'now..';
+        }
+        75% {
+          content: 'now...';
+        }
+        100% {
+          content: 'now....';
+        }
+      }
+      @keyframes finishedgreek {
+        0% {
+          content: 'τώρα';
+        }
+        25% {
+          content: 'τώρα.';
+        }
+        50% {
+          content: 'τώρα..';
+        }
+        75% {
+          content: 'τώρα...';
+        }
+        100% {
+          content: 'τώρα....';
+        }
       }
