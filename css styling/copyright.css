@@ -72,11 +72,11 @@ html {
   /* ----- Mobile Nav Bar Window ----- */
 
   /* ---------------- Nav Bar Black Background on Scroll ---------------- */
-    body.scroll #cs-navigation:before {
+    body.scroll #header-nav-bar:before {
       height: 100%;
     }
     
-    #cs-navigation {
+    #header-nav-bar {
       /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
       font-family: 'Roboto', 'Arial', sans-serif;
       width: 100%;
@@ -91,7 +91,7 @@ html {
       transition: background-color 0.3s;
     }
 
-    #cs-navigation:before {
+    #header-nav-bar:before {
       content: '';
       width: 100%;
       height: 0%;
@@ -104,7 +104,7 @@ html {
       transition: height .3s;
     }
 
-    #cs-navigation:after {
+    #header-nav-bar:after {
       content: '';
       width: 100%;
       height: 0vh;
@@ -123,16 +123,16 @@ html {
   /* ---------------- Nav Bar Black Background on Scroll ---------------- */
   
   /* ---------------- Nav Bar After Scrolling ---------------- */
-    #cs-navigation.cs-active {
+    #header-nav-bar.active-link {
       background-color: #1a1a1a;
     }
 
-    #cs-navigation.cs-active:after {
+    #header-nav-bar.active-link:after {
       height: 150vh;
       opacity: 1;
     }
 
-    #cs-navigation.cs-active .cs-ul-wrapper {
+    #header-nav-bar.active-link .UL-container {
       opacity: 1;
       transform: scaleY(1);
       transition-delay: .15s;
@@ -140,7 +140,7 @@ html {
       
     }
 
-    #cs-navigation.cs-active .cs-li {
+    #header-nav-bar.active-link .cl-li {
       transform: translateY(0);
       opacity: 1;
       will-change: transform;
@@ -149,7 +149,7 @@ html {
   /* ---------------- Nav Bar After Scrolling ---------------- */
   
   /* -------- Nav Bar Container -------- */
-    #cs-navigation .cs-container {
+    #header-nav-bar .container {
       width: 100%;
       display: flex;
       justify-content: flex-end;
@@ -160,7 +160,7 @@ html {
   /* ------------- Nav Bar Logo ------------- */
 
     /* ------------- Logo Container ------------- */
-      #cs-navigation .cs-logo {
+      #header-nav-bar .logo {
         width: auto;
         /* 56px - 80px */
         height: clamp(3.5rem, 5vw, 5rem);
@@ -176,7 +176,7 @@ html {
     /* ------------- Logo Container ------------- */
     
     /* ------------- Logo ------------- */
-      #cs-navigation .cs-logo img {
+      #header-nav-bar .logo img {
         width: 100%;
         height: 100%;
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
@@ -189,7 +189,7 @@ html {
   /* ------- Mobile Phone Expand Button ------- */
 
     /* ------- Click to Expand Button ------- */
-      #cs-navigation .cs-toggle {
+      #header-nav-bar .toggle {
         width: 3.5rem;
         height: 3.5rem;
         margin: 0 0 0 auto;
@@ -207,19 +207,19 @@ html {
     /* ------- Click to Expand Button ------- */
 
     /* -------- Expand Button Click Animation -------- */
-      #cs-navigation .cs-toggle.cs-active {
+      #header-nav-bar .toggle.active-link {
         transform: rotate(180deg);
         will-change: transform;
         
       }
     
       /* ------------- Button Icon Line 1/3 ------------- */
-        #cs-navigation .cs-active .cs-line1 {
+        #header-nav-bar .active-link .nav-bar-line1 {
           top: 50%;
           transform: translate(-50%, -50%) rotate(225deg);
         }
 
-        #cs-navigation .cs-line1 {
+        #header-nav-bar .nav-bar-line1 {
           top: 0;
           transform-origin: center;
           transition: transform .5s, top .3S, left .3S;
@@ -233,13 +233,13 @@ html {
       /* ------------- Button Icon Line 1/3 ------------- */
       
       /* ------------- Button Icon Line 2/3 ------------- */
-        #cs-navigation .cs-active .cs-line2 {
+        #header-nav-bar .active-link .nav-bar-line2 {
           top: 50%;
           transform-origin: center;
           transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
         }
 
-        #cs-navigation .cs-line2 {
+        #header-nav-bar .nav-bar-line2 {
           top: 45%;
           transform: translateX(-50%) translateY(-50%);
           transition: top .3s, left .3s, transform .5s;
@@ -253,12 +253,12 @@ html {
       /* ------------- Button Icon Line 2/3 ------------- */
 
       /* ------------- Button Icon Line 3/3 ------------- */
-        #cs-navigation .cs-active .cs-line3 {
+        #header-nav-bar .active-link .nav-bar-line3 {
           bottom: 100%;
           opacity: 0;
         }
 
-        #cs-navigation .cs-line3 {
+        #header-nav-bar .nav-bar-line3 {
           bottom: 0;
           transition: bottom .3s, opacity .3s;
         }
@@ -267,7 +267,7 @@ html {
     /* -------- Expand Button Click Animation -------- */
     
     /* ------ Container Box for Expand Button ------ */
-      #cs-navigation .cs-box {
+      #header-nav-bar .box {
         /* 24px - 28px */
         width: clamp(1.5rem, 2vw, 1.75rem);
         height: 1rem;
@@ -276,7 +276,7 @@ html {
     /* ------ Container Box for Expand Button ------ */
 
     /* ------- Format of Button Icon ------- */
-      #cs-navigation .cs-line {
+      #header-nav-bar .nav-bar-line {
         width: 100%;
         height: 2px;
         border-radius: 2px;
@@ -292,7 +292,7 @@ html {
   /* ------- Mobile Phone Expand Button ------- */
 
   /* ------------------- Nav Bar Buttons Container ------------------- */
-    #cs-navigation .cs-ul-wrapper {
+    #header-nav-bar .UL-container {
       width: 100%;
       height: auto;
       padding-bottom: 2.4em;
@@ -313,7 +313,7 @@ html {
   /* ------------------- Nav Bar Buttons Container ------------------- */
 
   /* --------------------- ul Element --------------------- */
-    #cs-navigation .cs-ul {
+    #header-nav-bar .cl-ul {
       margin: 0;
       padding: 3rem 0 0 0;
       width: 100%;
@@ -329,7 +329,7 @@ html {
   /* --------------------- ul Element --------------------- */
 
   /* --------------------- Buttons --------------------- */
-    #cs-navigation .cs-li {
+    #header-nav-bar .cl-li {
       width: 100%;
       text-align: center;
       list-style: none;
@@ -343,29 +343,29 @@ html {
     }
 
     /* -------------- Buttons Animation when Active -------------- */
-      #cs-navigation .cs-li:nth-of-type(1) {
+      #header-nav-bar .cl-li:nth-of-type(1) {
         transition-delay: .05s;
       }
 
-      #cs-navigation .cs-li:nth-of-type(2) {
+      #header-nav-bar .cl-li:nth-of-type(2) {
         transition-delay: .1s;
       }
 
-      #cs-navigation .cs-li:nth-of-type(3) {
+      #header-nav-bar .cl-li:nth-of-type(3) {
         transition-delay: .15s;
       }
 
-      #cs-navigation .cs-li:nth-of-type(4) {
+      #header-nav-bar .cl-li:nth-of-type(4) {
         transition-delay: .2s;
       }
 
-      #cs-navigation .cs-li:nth-of-type(5) {
+      #header-nav-bar .cl-li:nth-of-type(5) {
         transition-delay: .25s;
       }
     /* -------------- Buttons Animation when Active -------------- */
     
     /* --------- Button Links --------- */
-    #cs-navigation .cs-li-link {
+    #header-nav-bar .cl-li-link {
       /* 16px - 24px */
       font-size: clamp(1rem, 2.5vw, 1.5rem);
       line-height: 1.2em;
@@ -380,16 +380,16 @@ html {
       
     }
 
-    #cs-navigation .cs-li-link.cs-active {
+    #header-nav-bar .cl-li-link.active-link {
       color: var(--primary);
     }
 
-    #cs-navigation .cs-li-link:hover {
+    #header-nav-bar .cl-li-link:hover {
       color: var(--primary);
     }
     /* --------- Button Links --------- */
 
-    #cs-navigation .cs-button-solid {
+    #header-nav-bar .button-solid {
       display: none;
     }
   /* --------------------- Buttons --------------------- */
@@ -403,7 +403,7 @@ html {
 @media only screen and (min-width: 64rem) {
 
   /* -------------------------- Header Element -------------------------- */
-    #cs-navigation {
+    #header-nav-bar {
       /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
       font-family: 'Roboto', 'Arial', sans-serif;
       width: 100%;
@@ -417,7 +417,7 @@ html {
       z-index: 10000;
     }
 
-    #cs-navigation:before {
+    #header-nav-bar:before {
       /* on scroll background */
       content: '';
       width: 100%;
@@ -433,9 +433,9 @@ html {
   /* -------------------------- Header Element -------------------------- */
 
   /* -------------------------- Nav Bar Container -------------------------- */
-    #cs-navigation .cs-container {
+    #header-nav-bar .container {
       width: 100%;
-      /* same height as the cs-ul-wrapper */
+      /* same height as the UL-container */
       height: 6.3125rem;
       max-width: 80rem;
       margin: auto;
@@ -447,12 +447,12 @@ html {
     }
   /* -------------------------- Nav Bar Container -------------------------- */
 
-  #cs-navigation .cs-toggle {
+  #header-nav-bar .toggle {
     display: none;
   }
 
   /* -------------------------- Nav Bar Logo -------------------------- */
-    #cs-navigation .cs-logo {
+    #header-nav-bar .logo {
       width: auto;
       height: 3.75rem;
       /* margin-right auto pushes everything away from it to the right */
@@ -464,7 +464,7 @@ html {
       z-index: 100;
     }
 
-    #cs-navigation .cs-logo img {
+    #header-nav-bar .logo img {
       width: 90%;
       height: 90%;
       /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
@@ -473,7 +473,7 @@ html {
   /* -------------------------- Nav Bar Logo -------------------------- */
 
   /* -------------------------- Nav Bar Buttons Container -------------------------- */
-    #cs-navigation .cs-ul-wrapper {
+    #header-nav-bar .UL-container {
       /* absolutely positioned to be dead center */
       position: absolute;
       left: 50%;
@@ -484,7 +484,7 @@ html {
   /* -------------------------- Nav Bar Buttons Container -------------------------- */
 
   /* -------------------------- ul Element -------------------------- */
-    #cs-navigation .cs-ul {
+    #header-nav-bar .cl-ul {
       width: 100%;
       margin: 0;
       padding: 0;
@@ -496,7 +496,7 @@ html {
   /* -------------------------- ul Element -------------------------- */
 
   /* -------------------------- Buttons -------------------------- */
-    #cs-navigation .cs-li {
+    #header-nav-bar .cl-li {
       list-style: none;
       padding: 2.5rem 0;
       /* prevent flexbox from squishing it */
@@ -507,7 +507,7 @@ html {
   /* -------------------------- Button Links -------------------------- */
 
       /* ----------------- Unhovered Links ----------------- */
-        #cs-navigation .cs-li-link {
+        #header-nav-bar .cl-li-link {
           /* 14px - 16px */
           font-size: clamp(0.875rem, 0.6vw, 1rem);
           line-height: 1.5em;
@@ -526,7 +526,7 @@ html {
       /* ----------------- Unhovered Links ----------------- */
 
       /* ----------------- Background for Button Links when hovered ----------------- */
-        #cs-navigation .cs-li-link:before {
+        #header-nav-bar .cl-li-link:before {
           /* on scroll background */
           content: '';
           width: 100%;
@@ -544,14 +544,14 @@ html {
           
         }
 
-        #cs-navigation .cs-li-link:hover:before {
+        #header-nav-bar .cl-li-link:hover:before {
           opacity: 1;
           transform: translate(-50%, -50%) scale(1);
           will-change: transform;
           
         }
 
-        #cs-navigation .cs-li-link.cs-active:before {
+        #header-nav-bar .cl-li-link.active-link:before {
           opacity: 1;
           transform: translate(-50%, -50%) scale(1);
           will-change: transform;
@@ -563,7 +563,7 @@ html {
   /* ----------------- Book Appointment Button ----------------- */
 
       /* ----------------- Unhovered Links ----------------- */
-        #cs-navigation .cs-button-solid {
+        #header-nav-bar .button-solid {
           font-size: 1rem;
           /* 46px - 56px */
           /* line-height: clamp(2.875em, 5.5vw, 3.5em); */
@@ -586,7 +586,7 @@ html {
       /* ----------------- Unhovered Links ----------------- */
       
       /* ----------------- Background for when Hovered ----------------- */
-        #cs-navigation .cs-button-solid:before {
+        #header-nav-bar .button-solid:before {
           content: '';
           position: absolute;
           height: 100%;
@@ -599,7 +599,7 @@ html {
           transition: width .3s;
         }
 
-        #cs-navigation .cs-button-solid:hover:before {
+        #header-nav-bar .button-solid:hover:before {
           width: 100%;
         }
       /* ----------------- Background for when Hovered ----------------- */
@@ -1136,7 +1136,7 @@ html {
 @media only screen and (min-width: 0rem) {
 
     /* ------------------------------------ Footer Styling ------------------------------------ */
-      #cs-footer-1292 {
+      #footer-container-section {
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: 'Roboto', 'Arial', sans-serif;
         padding: var(--sectionPadding);
@@ -1154,7 +1154,7 @@ html {
     /* ------------------------------------ Footer Styling ------------------------------------ */
   
     /* ------------------------------------ Container ------------------------------------ */
-      #cs-footer-1292 .cs-container {
+      #footer-container-section .container {
         width: 100%;
         margin: auto;
         display: flex;
@@ -1167,7 +1167,7 @@ html {
     /* ------------------------------------ Container ------------------------------------ */
   
     /* ------------------------------------ Logo Container ------------------------------------ */
-      #cs-footer-1292 .cs-logo-group {
+      #footer-container-section .logo-group {
         /* takes up all the space, lets the other ul's wrap below it */
         width: 100%;
         position: relative;
@@ -1175,7 +1175,7 @@ html {
     /* ------------------------------------ Logo Container ------------------------------------ */
   
     /* ------------------------------------ Logo ------------------------------------ */
-      #cs-footer-1292 .cs-logo {
+      #footer-container-section .logo {
         width: 12.3125rem;
         height: auto;
         display: block;
@@ -1183,19 +1183,19 @@ html {
         margin: 0 0 clamp(1.25rem, 2vw, 1.5rem) 0;
       }
   
-      #cs-footer-1292 .cs-logo-img {
+      #footer-container-section .logo-img {
         width: 30%;
         height: auto;
         margin-bottom: -12px; 
       }
   
-      #cs-footer-1292 .cs-logo-img.dark {
+      #footer-container-section .logo-img.dark {
         display: none;
       }
     /* ------------------------------------ Logo ------------------------------------ */
   
     /* ------------------------------------ Logo Container Text ------------------------------------ */
-      #cs-footer-1292 .cs-text {
+      #footer-container-section .text-content {
         font-size: 0.875rem;
         line-height: 1.5em;
         /* 20px - 36px */
@@ -1207,7 +1207,7 @@ html {
     /* ------------------------------------ Logo Container Text ------------------------------------ */
   
     /* ------------------------------------ Logo Container Contact Link ------------------------------------ */
-      #cs-footer-1292 .cs-link {
+      #footer-container-section .cl-link {
         font-size: 0.875rem;
         line-height: 1.5em;
         text-decoration: none;
@@ -1220,13 +1220,13 @@ html {
         transition: color .3s;
       }
     
-      #cs-footer-1292 .cs-link:hover {
+      #footer-container-section .cl-link:hover {
         color: var(--secondaryLight);
       }
     /* ------------------------------------ Logo Container Contact Link ------------------------------------ */
   
     /* ------------------------------------ Services Group ------------------------------------ */
-      #cs-footer-1292 .cs-nav {
+      #footer-container-section .cl-nav {
         width: 45%;
         max-width: 11.25rem;
         padding: 0;
@@ -1240,7 +1240,7 @@ html {
     /* ------------------------------------ Services Group ------------------------------------ */
   
     /* ------------------------------------ Services Group Link ------------------------------------ */
-      #cs-footer-1292 .cs-nav-li {
+      #footer-container-section .cl-nav-li {
         list-style: none;
         display: flex;
         justify-content: flex-start;
@@ -1249,7 +1249,7 @@ html {
     /* ------------------------------------ Services Group Link ------------------------------------ */
   
     /* ------------------------------------ Services Group Link Header ------------------------------------ */
-      #cs-footer-1292 .cs-header {
+      #footer-container-section .cl-header {
         font-size: 1rem;
         line-height: 1.2em;
         font-weight: 700;
@@ -1261,7 +1261,7 @@ html {
     /* ------------------------------------ Services Group Link Header ------------------------------------ */
   
     /* ------------------------------------ Services Group Redirect Link (anchor) ------------------------------------ */
-      #cs-footer-1292 .cs-nav-link {
+      #footer-container-section .cl-nav-link {
         font-size: 0.875rem;
         text-decoration: none;
         line-height: 1.5em;
@@ -1272,7 +1272,7 @@ html {
         transition: color .3s;
       }
   
-      #cs-footer-1292 .cs-nav-link:before {
+      #footer-container-section .cl-nav-link:before {
         /* underline */
         content: '';
         width: 0%;
@@ -1286,17 +1286,17 @@ html {
         transition: width .3s;
       }
   
-      #cs-footer-1292 .cs-nav-link:hover {
+      #footer-container-section .cl-nav-link:hover {
         color: var(--secondaryLight);
       }
   
-      #cs-footer-1292 .cs-nav-link:hover:before {
+      #footer-container-section .cl-nav-link:hover:before {
         width: 100%;
       }
     /* ------------------------------------ Services Group Redirect Link (anchor) ------------------------------------ */
   
     /* ------------------------------------ Resonat Promo Container ------------------------------------ */
-      #cs-footer-1292 .cs-bottom {
+      #footer-container-section .footer-bottom {
         max-width: 80rem;
         margin: auto;
         /* 48px - 100px */
@@ -1314,26 +1314,26 @@ html {
     /* ------------------------------------ Resonat Promo Container ------------------------------------ */
   
     /* ------------------------------------ Resonat Promo ------------------------------------ */
-      #cs-footer-1292 .cs-copyright,
-      #cs-footer-1292 .cs-copyright-link {
+      #footer-container-section .copyright,
+      #footer-container-section .copyright-link {
         font-size: 0.875rem;
         line-height: 1.5em;
         color: var(--bodyTextColor);
         padding-bottom: 70px;
       }
   
-      #cs-footer-1292 .cs-copyright {
+      #footer-container-section .copyright {
         text-align: center;
         width: 100%;
       }
   
-      #cs-footer-1292 .cs-copyright-link {
+      #footer-container-section .copyright-link {
         text-decoration: none;
         transition: color .3s;
         color: rgb(2, 128, 201);
       }
   
-      #cs-footer-1292 .cs-copyright-link:hover {
+      #footer-container-section .copyright-link:hover {
         color: rgb(2, 92, 144);
       }
     /* ------------------------------------ Resonat Promo ------------------------------------ */
@@ -1349,7 +1349,7 @@ html {
     /* ------------------------------------ Assets Used ------------------------------------ */
   
     /* ------------------------------------ Floating Circles ------------------------------------ */
-      #cs-footer-1292 .cs-floater {
+      #footer-container-section .floating-img {
         width: 31.625rem;
         height: 31.625rem;
         margin-left: 34.375rem;
@@ -1362,7 +1362,7 @@ html {
         left: -50%;
       }
     
-      #cs-footer-1292 .cs-floater:before {
+      #footer-container-section .floating-img:before {
         content: '';
         width: 31.625rem;
         height: 31.625rem;
@@ -1376,7 +1376,7 @@ html {
         
       }
   
-      #cs-footer-1292 .cs-floater:after {
+      #footer-container-section .floating-img:after {
         content: '';
         width: 31.625rem;
         height: 31.625rem;
@@ -1394,7 +1394,7 @@ html {
     /* Tablet - 768px */
     @media only screen and (min-width: 48rem) {
     /* ------------------------------------ Container ------------------------------------ */  
-      #cs-footer-1292 .cs-container {
+      #footer-container-section .container {
         row-gap: 0;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1404,7 +1404,7 @@ html {
     /* ------------------------------------ Container ------------------------------------ */
   
       /* ------------------------------------ Floating Circles ------------------------------------ */
-      #cs-footer-1292 .cs-floater {
+      #footer-container-section .floating-img {
         width: 31.625rem;
         height: 31.625rem;
         margin-left: 34.375rem;
@@ -1418,7 +1418,7 @@ html {
         left: 65%;
       }
     
-      #cs-footer-1292 .cs-floater:before {
+      #footer-container-section .floating-img:before {
         content: '';
         width: 31.625rem;
         height: 31.625rem;
@@ -1432,7 +1432,7 @@ html {
         
       }
   
-      #cs-footer-1292 .cs-floater:after {
+      #footer-container-section .floating-img:after {
         content: '';
         width: 31.625rem;
         height: 31.625rem;
@@ -1448,20 +1448,20 @@ html {
     /* ------------------------------------ Floating Circles ------------------------------------ */
   
     /* ------------------------------------ Services Group ------------------------------------ */
-      #cs-footer-1292 .cs-nav {
+      #footer-container-section .cl-nav {
         width: auto;
       }
     /* ------------------------------------ Services Group ------------------------------------ */
   
     /* ------------------------------------ Misc Info Container ------------------------------------ */
-      #cs-footer-1292 .cs-bottom {
+      #footer-container-section .footer-bottom {
         flex-wrap: nowrap;
         justify-content: flex-start;
       }
     /* ------------------------------------ Misc Info Container ------------------------------------ */
   
     /* ------------------------------------ Resonat Promo ------------------------------------ */
-      #cs-footer-1292 .cs-copyright {
+      #footer-container-section .copyright {
         text-align: left;
         width: auto;
         margin-right: auto;
@@ -1483,7 +1483,7 @@ html {
     /* ------------------------------------ Assets Used ------------------------------------ */
   
     /* ------------------------------------ Floating Circles ------------------------------------ */
-      #cs-footer-1292 .cs-floater {
+      #footer-container-section .floating-img {
         display: block;
       }
     /* ------------------------------------ Floating Circles ------------------------------------ */
@@ -1491,7 +1491,7 @@ html {
     /* Small Desktop - 1024px */
     @media only screen and (min-width: 64rem) {
     /* ------------------------------------ Container ------------------------------------ */  
-      #cs-footer-1292 .cs-container {
+      #footer-container-section .container {
         max-width: 80rem;
         flex-wrap: nowrap;
         /* align everything to the right */
@@ -1501,7 +1501,7 @@ html {
     /* ------------------------------------ Container ------------------------------------ */
   
     /* ------------------------------------ Floating Circles ------------------------------------ */
-      #cs-footer-1292 .cs-floater {
+      #footer-container-section .floating-img {
         width: 31.625rem;
         height: 31.625rem;
         margin-left: 34.375rem;
@@ -1515,7 +1515,7 @@ html {
         left: 65%;
       }
     
-      #cs-footer-1292 .cs-floater:before {
+      #footer-container-section .floating-img:before {
         content: '';
         width: 31.625rem;
         height: 31.625rem;
@@ -1529,7 +1529,7 @@ html {
         
       }
   
-      #cs-footer-1292 .cs-floater:after {
+      #footer-container-section .floating-img:after {
         content: '';
         width: 31.625rem;
         height: 31.625rem;
@@ -1545,7 +1545,7 @@ html {
     /* ------------------------------------ Floating Circles ------------------------------------ */
   
     /* ------------------------------------ Logo Container ------------------------------------ */
-      #cs-footer-1292 .cs-logo-group {
+      #footer-container-section .logo-group {
         width: 30%;
         max-width: 24.1875rem;
         /* pushes away from everything to the right */
@@ -1554,7 +1554,7 @@ html {
     /* ------------------------------------ Logo Container ------------------------------------ */
   
     /* ------------------------------------ Logo Container Text ------------------------------------ */
-      #cs-footer-1292 .cs-text {
+      #footer-container-section .text-content {
         width: 100%;
       }
     /* ------------------------------------ Logo Container Text ------------------------------------ */
