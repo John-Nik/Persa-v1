@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
-Disallow: /en/copyright
-Disallow: /gr/copyright
+Disallow: /en/copyright.html
+Disallow: /gr/copyright.hmtl
+Disallow: /en/404.html
+Disallow: /gr/404.hmtl
+Disallow: /en/success.html
+Disallow: /gr/success.hmtl
