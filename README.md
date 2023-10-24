@@ -33,5 +33,7 @@ __1.0.9:__ <ul>  <li>Changed the canonical and alternate element tags to link to
 
 __1.0.10:__ <ol>  <li>Added a "success.html" page to redirect to after the forms have been successfully completed.</li>  <li>Added new disallow rules for the robots</li>  <li>Updated the "404.css" to also support elements from the "success.html", thus saving time in creating a new css file</li>  <li>Added an attribute to "meetingbook.html" form's to instruct netlify to redirect pages to the new "success.html"</li>  </ol>
 
-_1.0.11:__ Changed all references about PErsa from "Persa Consta" to "Persa Costa", in both greek and english <br>
+__1.0.11:__ Changed all references about Persa from "Persa Consta" to "Persa Costa", in both greek and english <br>
+<br>
+__1.0.12:__ Changed Bsc on "about.html" from "Bsc" to "BSc". Also italisized them to improve visual hierarchy <br>
 <br>
