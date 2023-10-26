@@ -37,3 +37,5 @@ __1.0.11:__ Changed all references about Persa from "Persa Consta" to "Persa Cos
 <br>
 __1.0.12:__ Changed Bsc on "about.html" from "Bsc" to "BSc". Also italisized them to improve visual hierarchy <br>
 <br>
+__1.0.13:__ Fixed grammar mistake of word "Επικοινωνία" <br>
+<br>
