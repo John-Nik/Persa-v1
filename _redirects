@@ -1,5 +1,7 @@
-/ /en 301! Language=en
-/ /gr 301! Language=el
+/* /en 301! Cookie=english
+/* /gr 301! Cookie=greek
+/* /en 301! Language=en
+/* /gr 301! Language=el
 
 /en/* /en/404 404
 /gr/* /gr/404 404

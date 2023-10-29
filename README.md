@@ -37,5 +37,4 @@ __1.0.11:__ Changed all references about Persa from "Persa Consta" to "Persa Cos
 <br>
 __1.0.12:__ Changed Bsc on "about.html" from "Bsc" to "BSc". Also italisized them to improve visual hierarchy <br>
 <br>
-__1.0.13:__ Fixed grammar mistake of word "Επικοινωνία" <br>
-<br>
+__1.0.13:__ <ul>    <li>Changed the way the cookies redirect works. The redirect job has been handed over to netlify, which will automatically redirect users who first time visit the website to the appropriate language version depending on the set language of their browser. If the user decides to switch the language, it then installs cookies about the language they chose. When eventually the user revisits the website, netlify will redirect them to the language the user chose. This combats 2 issues faced: <ol>    <li>It allows for a better index by search engines, since they won't be forcibly redirected to another link, making both language versions visible to the web</li>    <li>Slightly increases the speed in which the site loads</li>   <ol>    </li>   <li>Updated the "sitemap.xml"</li>    <li>Removed hotjar from the html files and instead offloaded it to google tags, improving website perfomance by utilizing the PartyTown library</li>    <li>Updated "_redirects"</li>   </ul>
