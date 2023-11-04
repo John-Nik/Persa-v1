@@ -83,5 +83,5 @@ __1.9.0:__
 	<li>Updated "_redirects"</li>
 </ul>
 
-__1.9.1:__ Added semantic meaning to version numbers to follow the standard conventions <br>
+__1.9.1:__ Added semantic meaning to version numbers to follow the standard conventions used for npm package versions <br>
 <br>
