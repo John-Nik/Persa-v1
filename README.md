@@ -82,3 +82,6 @@ __1.9.0:__
 	<li>Removed hotjar from the html files and instead offloaded it to google tags, improving website perfomance by utilizing the PartyTown library</li>
 	<li>Updated "_redirects"</li>
 </ul>
+
+__1.9.1:__ Added semantic meaning to version numbers to follow the standard conventions <br>
+<br>
